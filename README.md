@@ -9,6 +9,7 @@ self-contained folder with a `SKILL.md` entry point.
 | Skill | What it does |
 |-------|--------------|
 | [`backend-conventions`](skills/backend-conventions/) | My backend coding style for Node/TypeScript APIs — Fastify 5 + Prisma 7 + Zod 4, layered architecture (controller → use case → repository), manual DI, multi-provider DB, Bearer JWT, Vitest/Supertest. |
+| [`skill-authoring`](skills/skill-authoring/) | Meta-skill: how to extract a reusable convention skill from a project (or idea) and package it for this repo. Say "use skill-authoring to extract a skill from `<path>`". |
 
 ## Layout
 
