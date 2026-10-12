@@ -2,13 +2,15 @@
 
 A collection of my agent skills — reusable conventions and guidelines for AI coding agents
 (Claude Code, opencode, and other skill-aware tools). Each skill lives under `skills/` as a
-self-contained folder with a `SKILL.md` entry point.
+self-contained folder with a `SKILL.md` entry point. They form a `*-forge` family: `api-forge`
+(backend), `react-forge` (frontend), and `skill-forge` (authoring new skills).
 
 ## Skills
 
 | Skill | What it does |
 |-------|--------------|
 | [`api-forge`](skills/api-forge/) | My backend coding style for Node/TypeScript APIs — Fastify 5 + Prisma 6 + Zod 3, layered architecture (controller → use case → repository) with domain entities + mappers, async DI factories, multi-provider DB via `env.TYPE_DB`, Bearer JWT (`@fastify/jwt` + bcrypt), OpenAPI generated from Zod, Jest/Supertest. |
+| [`react-forge`](skills/react-forge/) | My frontend coding style for React web apps — React + TypeScript + Vite + Tailwind CSS v4 + shadcn/ui, with React Hook Form + Zod forms, TanStack Query for server state (hand-written `src/api` or Orval), react-router, typed `env.ts`, and Vitest/Testing Library/MSW/Playwright. Opinionated preferred set + a precedence rule. |
 | [`skill-forge`](skills/skill-forge/) | Meta-skill: how to extract a reusable convention skill from a project (or idea) and package it for this repo. Say "use skill-forge to extract a skill from `<path>`". |
 
 ## Layout
